@@ -15,6 +15,9 @@ All notable changes to the OpenClaw Assistant Home Assistant Add-on will be docu
 ### Translations
 - Added `controlui_disable_device_auth` labels/descriptions to: `en`, `bg`, `de`, `es`, `pl`, `pt-BR`.
 
+### Fixed
+- Docker build stability: replaced NodeSource `setup_22.x | bash` installer with explicit keyring + apt source configuration for Node.js 22, avoiding intermittent `apt-get install nodejs` exit code 100 failures.
+
 ## [0.5.54] - 2026-02-25
 
 ### Changed
